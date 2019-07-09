@@ -1,14 +1,5 @@
 class Strings {
   static String appTitle = 'Flutter Onboarding';
-
-  //Onboarding Page
-  static String onboardingSplashTitle1 = 'welcome to influenzanet';
-  static String onboardingCaption1 = 'Welcome to Influenzanet';
-  static String onboardingCaption2 = 'Caption 2';
-  static String onboardingCaption3 = 'Caption 3';
-  static String onboardingDescription1 = 'Participate in influenza-like-illnesses (ILI) research';
-  static String onboardingDescription2 = 'This is the second picture description';
-  static String onboardingDescription3 = 'This is the third picture description';
   static String loginButtonText = 'Login';
   static String signupButtonText = 'Create a New Account';
 
