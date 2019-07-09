@@ -1,3 +1,3 @@
-# flutter_onboarding_with_scopedmodel
+# flutter_onboarding
 
-Flutter App consist of Login and Registration workflow with ScopedModel 
+Flutter App consist of Login and Registration workflow
