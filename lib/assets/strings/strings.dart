@@ -22,11 +22,13 @@ class Strings {
   static String confirmPasswordFieldLabel = 'Confirm Password';
   static String forgotPasswordButtonText = 'Forgot Password?';
   static String signupQuestion = "Don't have an account yet? ";
-  static String invalidEmailAddressText = "Please insert a valid email address";
 
-  static RegExp emailRegExp = new RegExp(r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?)*$");
-
-
-  
+  // Input validation message
+  static String invalidEmailAddressText = "Invalid email address";
+  static String invalidPasswordText = "Invalid Password";
+  static String emptyPasswordText = "Please insert the Password";
+  static String emptyEmailText = "Please insert the Email";
+  static String emailPattern = r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$';
+  static String invalidConfirmPasswordText = "Password not match";
 
 }
