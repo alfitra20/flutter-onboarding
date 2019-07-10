@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_onboarding_with_scopedmodel/assets/strings/strings.dart';
-import 'package:flutter_onboarding_with_scopedmodel/helper/input_validators.dart';
+import 'package:flutter_onboarding/assets/strings/strings.dart';
+import 'package:flutter_onboarding/helper/input_validators.dart';
 
 class Signup extends StatefulWidget {
   SignupState createState() => SignupState();

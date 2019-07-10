@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_onboarding_with_scopedmodel/assets/strings/strings.dart';
-import 'package:flutter_onboarding_with_scopedmodel/screens/home/homepage.dart';
-import 'package:flutter_onboarding_with_scopedmodel/screens/login/login.dart';
-import 'package:flutter_onboarding_with_scopedmodel/screens/signup/signup.dart';
+import 'package:flutter_onboarding/assets/strings/strings.dart';
+import 'package:flutter_onboarding/screens/home/homepage.dart';
+import 'package:flutter_onboarding/screens/login/login.dart';
+import 'package:flutter_onboarding/screens/signup/signup.dart';
 
 void main() => runApp(MyApp());
 

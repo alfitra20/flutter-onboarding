@@ -1,4 +1,4 @@
-import 'package:flutter_onboarding_with_scopedmodel/assets/strings/strings.dart';
+import 'package:flutter_onboarding/assets/strings/strings.dart';
 
 class InputValidators {
   // Funtion to validate the email input
