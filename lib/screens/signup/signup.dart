@@ -6,11 +6,11 @@ class Signup extends StatefulWidget {
 }
 
 class SignupState extends State<StatefulWidget> {
+  final TextEditingController _passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   bool _autoValidate = false;
   String _email;
   String _password;
-  String _confirmPassword;
   final _formHintStyle = const TextStyle(
     fontSize: 16, 
     color: Colors.blueGrey, 
@@ -78,6 +78,7 @@ class SignupState extends State<StatefulWidget> {
                                   _buildEmailFields(),
                                   const SizedBox(height: 10.0),
                                   TextFormField(
+                                    controller: _passwordController,
                                     validator: _validatePassword,
                                     keyboardType: TextInputType.text,
                                     onSaved: (value) => _password = value,
@@ -105,7 +106,6 @@ class SignupState extends State<StatefulWidget> {
                                   TextFormField(
                                     validator: _validateConfirmPassword,
                                     keyboardType: TextInputType.text,
-                                    onSaved: (value) => _confirmPassword = value, 
                                     style: _formInputTextStyle,
                                     decoration: InputDecoration(
                                       labelText: Strings.confirmPasswordFieldLabel,
@@ -199,15 +199,13 @@ class SignupState extends State<StatefulWidget> {
   }
 
   String _validateConfirmPassword(String value) {
-  if (value != _password){
+  if (value != _passwordController.text){
     return Strings.invalidConfirmPasswordText;
   } 
   return null;
   }
 
-}
-
-  
+} 
 
 String _validateEmail(String value){
   Pattern emailPattern = Strings.emailPattern;  
